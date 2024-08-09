@@ -1,0 +1,90 @@
+﻿<Window x:Class="FreelanceCoderApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Freelance Coder Looking for Work" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Background="#333" Height="50" VerticalAlignment="Top" Grid.Row="0">
+            <TextBlock Text="Freelance Coder Available for Work"
+                       Foreground="White"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+        </Border>
+
+        <!-- Main Content -->
+        <ScrollViewer Grid.Row="1" Margin="20">
+            <StackPanel>
+                <!-- About Me -->
+                <TextBlock Text="About Me"
+                           FontSize="20"
+                           FontWeight="Bold"
+                           Margin="0,0,0,10"/>
+                <TextBlock Text="Hello! My name is Wesley Brown I Graduated from Troy University with a Bachelor's in Computer Science, and I am a skilled freelance coder with experience in a variety of programming languages and technologies. I specialize in web development, software engineering, and custom coding solutions. I am passionate about creating efficient, scalable, and maintainable code to help bring your projects to life."
+                           TextWrapping="Wrap"
+                           Margin="0,0,0,20"/>
+
+                <!-- Services Offered -->
+                <TextBlock Text="Services Offered"
+                           FontSize="20"
+                           FontWeight="Bold"
+                           Margin="0,0,0,10"/>
+                <TextBlock Text="• Web Development (HTML, CSS, JavaScript, React, etc.)
+• Software Development (Python, Java, C++, etc.)
+• Database Design and Management
+• API Integration and Development"
+                           TextWrapping="Wrap"
+                           Margin="0,0,0,20"/>
+
+                <!-- Why Choose Me? -->
+                <TextBlock Text="Why Choose Me?"
+                           FontSize="20"
+                           FontWeight="Bold"
+                           Margin="0,0,0,10"/>
+                <TextBlock Text="I am dedicated to delivering high-quality work on time and within budget. My approach is client-focused, ensuring that I understand your needs and goals to provide the best possible solutions."
+                           TextWrapping="Wrap"
+                           Margin="0,0,0,20"/>
+
+                <!-- Contact Me -->
+                <TextBlock Text="Contact Me"
+                           FontSize="20"
+                           FontWeight="Bold"
+                           Margin="0,0,0,10"/>
+                <StackPanel>
+                    <TextBlock Text="Email: Yogibearsports@gmail.com" Margin="0,0,0,5"/>
+                    <TextBlock Text="Phone: 334-441-8902" Margin="0,0,0,5"/>
+                    <TextBlock Margin="0,0,0,5">
+                        <TextBlock.Inlines>
+                            <Hyperlink NavigateUri="https://www.linkedin.com/in/wesley-brown-b8906618a?original_referer=https%3A%2F%2Fwww.google.com%2Fhttps://www.linkedin.com/in/wesley-brown-b8906618a?original_referer=https%3A%2F%2Fwww.google.com%2F" Foreground="Blue">
+                                <TextBlock Text="LinkedIn Profile"/>
+                            </Hyperlink>
+                        </TextBlock.Inlines>
+                        </TextBlock>
+                    <TextBlock Margin="0,0,0,5">
+                         <TextBlock.Inlines>
+                            <Hyperlink NavigateUri="https://www.linkedin.com/in/wesley-brown-b8906618a?original_referer=https%3A%2F%2Fwww.google.com%2F" Foreground="Blue" RequestNavigate="Hyperlink_RequestNavigate">
+                                <TextBlock Text="LinkedIn Profile"/>
+                            </Hyperlink>
+                        </TextBlock.Inlines>
+                    </TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Footer -->
+        <Border Background="#333" Height="30" VerticalAlignment="Bottom" Grid.Row="2">
+            <TextBlock Text="© 2024 Wesley Brown. All rights reserved."
+                       Foreground="White"
+                       FontSize="14"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+        </Border>
+    </Grid>
+</Window>
